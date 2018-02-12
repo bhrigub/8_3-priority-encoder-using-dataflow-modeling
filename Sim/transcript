@@ -1,0 +1,36 @@
+# Reading C:/questasim_10.1d/tcl/vsim/pref.tcl 
+# //  Questa Sim
+# //  Version 10.1d win32 Nov  1 2012
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# OpenFile C:/Users/Admin/Desktop/VERILOG/Lab_Work/B/Lab2/Q2/Sim/l2q2.mpf 
+# Loading project l2q2
+# Error opening C:/Users/Admin/Desktop/VERILOG/Lab_Work/150240133004/Lab2/Q2/Src/test_enco.v
+# Path name 'C:/Users/Admin/Desktop/VERILOG/Lab_Work/150240133004/Lab2/Q2/Src/test_enco.v' doesn't exist.
+# Error opening C:/Users/Admin/Desktop/VERILOG/Lab_Work/150240133004/Lab2/Q2/Src/test_enco.v
+# Path name 'C:/Users/Admin/Desktop/VERILOG/Lab_Work/150240133004/Lab2/Q2/Src/test_enco.v' doesn't exist.
+project addfile ../Src/enco_priority.v
+project addfile ../Src/test_enco.v
+
+project compileall
+# Compile of enco_priority.v was successful.
+# Compile of test_enco.v was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim -wlf l2q2.wlf -novopt tenco_p
+# vsim -wlf l2q2.wlf -novopt tenco_p 
+# Refreshing C:/Users/Admin/Desktop/VERILOG/Lab_Work/B/Lab2/Q2/Sim/work.tenco_p
+# Loading work.tenco_p
+# Refreshing C:/Users/Admin/Desktop/VERILOG/Lab_Work/B/Lab2/Q2/Sim/work.enco_p
+# Loading work.enco_p
+add wave *
+run
+restart -f
+run 200
+restart -f
+run 150
